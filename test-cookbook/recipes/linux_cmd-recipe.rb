@@ -11,3 +11,8 @@ execute "Run a script" do
   EOH
 end
 
+%w(mariadb-server tree git) .each do |p|
+  package p do
+    action :install
+  end
+end

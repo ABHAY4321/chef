@@ -4,7 +4,7 @@
 #
 # Copyright:: 2023, The Authors, All Rights Reserved.
 
-file 'sysinfo' do
+file '/sysinfo' do
   content "This is to get attributes
   HOSTNAME: #{node['hostname']}
   IPADDRESS: #{node['ipaddress']}

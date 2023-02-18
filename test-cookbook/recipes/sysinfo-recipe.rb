@@ -10,7 +10,7 @@ file '/sysinfo' do
   IPADDRESS: #{node['ipaddress']}
   CPU: #{node['cpu']['0']['mhz']}
   MEMORY: #{node['memory']['total']}"
-  owner 'abhay'
-  group 'abhay'
+  owner 'root'
+  group 'root'
   action :create
 end
